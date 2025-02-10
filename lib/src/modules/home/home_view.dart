@@ -1,4 +1,5 @@
 import 'package:build_provider_app/src/modules/home/home_controller.dart';
+import 'package:build_provider_app/src/utils/constants/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -9,7 +10,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     final HomeController controller = Get.put(HomeController());
     return Scaffold(
-      appBar: AppBar(title: const Text("HomeView")),
+      appBar: AppBar(title: const Text(AppConstants.homeTitle)),
       body: Column(
         children: [
           ElevatedButton(
